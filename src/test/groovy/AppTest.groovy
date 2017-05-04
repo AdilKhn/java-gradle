@@ -6,10 +6,11 @@
 
 
  class AppSpec extends Specification {
-   def "getGreeting"(){
+   def "The Greeting"(){
+    "this should happen"
     expect: new App().getGreeting() == 'Hi'
   }
-   def "getGreetingFail"(){
-    expect: new App().getGreeting() == 'Hiii'
+   def "The Farewell"(){
+    expect: new App().getFarewell() == 'Bye'
   }
  }
